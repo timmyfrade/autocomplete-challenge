@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+import AutocompleteInput from './components/AutocompleteInput';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AutocompleteInput
+        /* Array of fruits */
+        fruits={
+          ["Banana", "Apple", "Pear", "Lemon", "Lime", "Grape", 
+          "Strawberry", "Blueberry", "Avocado", "Mango", 
+          "Orange", "Kiwi", "Blackberry", "Peach", "Apricot"
+        ]}
+      />
     </div>
   );
 }
-
 export default App;
